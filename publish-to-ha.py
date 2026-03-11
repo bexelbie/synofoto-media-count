@@ -91,6 +91,7 @@ def publish_discovery(username):
             "state_topic": state_topic,
             "value_template": f"{{{{ value_json.{key} }}}}",
             "icon": "mdi:image-multiple",
+            "state_class": "measurement",
             "device": {
                 "identifiers": [device_id],
                 "name": f"Synology Photos ({username})",
